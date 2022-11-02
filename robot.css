@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.head, 
+.right-eye,
+.left-eye,
+.body-part,
+.left-hand,
+.right-hand,
+.right-leg,
+.left-leg,
+.smile{
+    background-color: #4f515c;
+}
+
+.head{
+    position: absolute;
+    border: 1px solid black;
+    width: 125px;
+    height: 90px;
+    top: 150px;
+    left: 500px;
+}
+
+
+.right-eye{
+    position: absolute;
+    width: 22px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: purple;
+    border: 4px solid white;
+    top: 180px ;
+    left: 578px;
+}
+
+.left-eye{
+    position: absolute;
+    width: 22px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: purple;
+    border: 4px solid white;
+    top: 180px ;
+    left: 528px;
+}
+
+.body-part{
+    position: absolute;
+    left: 500px;
+    top: 250px;
+    width: 125px;
+    height: 170px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.left-hand{
+    position: absolute;
+    width: 20px;
+    height: 90px;
+    border-radius: 5px;
+    top: 265px;
+    left: 470px;
+    rotate: 5deg ;
+}
+
+.right-hand{
+    position: absolute;
+    width: 20px;
+    height: 90px;
+    border-radius: 5px;
+    top: 265px;
+    left: 638px;
+    rotate: -5deg;
+}
+
+.left-leg{
+    position: absolute;
+    width: 21px;
+    height: 55px;
+    border-radius: 0px 0px 10px 10px;
+    top: 430px;
+    left: 535px;
+}
+
+.right-leg{
+    position: absolute;
+    width: 21px;
+    height: 55px;
+    border-radius: 0px 0px 10px 10px;
+    top: 430px;
+    left: 570px;
+}
+
+.right-hand:hover{
+    top: 180px;
+    rotate: 15deg;
+    left: 645px;
+}
+
+button{
+    margin: 100px auto;
+    display: block;
+    padding: 5px 15px;
+}
+
+.body-part:hover{
+    background-color: blueviolet;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.left-leg:hover {
+    width: 21px;
+    height: 175px;
+    background-color: blueviolet;
+    border-radius: 0px 0px 10px 10px;
+    top: 430px;
+    left: 535px;
+    position: absolute;
+    display: block;
+    transition: linear 0.2s;
+}
+/* this is not working. I tried to change body color , when one click button. */
+/* button:hover .body-part{
+    background-color: brown;
+}
+
+.smile{
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    border: 3px solid white;
+    background-color: purple;
+    top: 220px;
+    left: 548px;
+}
+
+.head:hover .smile{
+    position: relative;
+    display: block;
+}
+
+.smile{
+    display: none;
+} */
